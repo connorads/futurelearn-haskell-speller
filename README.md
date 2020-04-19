@@ -1,6 +1,6 @@
 # FutureLearn Haskell Speller
 
-@connorads solution for the [Write a Spelling Book Generator](https://www.futurelearn.com/courses/functional-programming-haskell/7/steps/726705) exercise in the [FutureLearn Functional Programming in Haskell](https://www.futurelearn.com/courses/functional-programming-haskell) course.
+Solution for the [Write a Spelling Book Generator](https://www.futurelearn.com/courses/functional-programming-haskell/7/steps/726705) exercise in the [FutureLearn Functional Programming in Haskell](https://www.futurelearn.com/courses/functional-programming-haskell) course.
 
 ## Exercise
 
