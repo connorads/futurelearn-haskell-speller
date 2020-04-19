@@ -1,4 +1,5 @@
 module Speller (speller) where
 
 speller :: [[Char]] -> [Char]
-speller _ = "a is for abacus"
+speller [] = ""
+speller (x:_) = ([head x]) ++ " is for " ++ x
