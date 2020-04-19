@@ -1,0 +1,44 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.31.2.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: f06c4f5ee882f73cd4c7a7631cb3560c05753bdbe6acc3757fabb34429cdb718
+
+name:           speller
+version:        0.0.0
+author:         Connor Adams
+maintainer:     Connor Adams
+copyright:      (c) 2020 Connor Adams
+license:        MIT
+license-file:   LICENSE
+build-type:     Simple
+
+library
+  exposed-modules:
+      Speller
+  other-modules:
+      Paths_speller
+  hs-source-dirs:
+      src
+  ghc-options: -Wall
+  build-depends:
+      base ==4.*
+  default-language: Haskell2010
+
+test-suite spec
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      SpellerSpec
+      Paths_speller
+  hs-source-dirs:
+      test
+  ghc-options: -Wall
+  build-depends:
+      base ==4.*
+    , hspec ==2.*
+    , speller
+  default-language: Haskell2010
+  build-tool-depends: hspec-discover:hspec-discover == 2.*

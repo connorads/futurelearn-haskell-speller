@@ -1,0 +1,19 @@
+name: speller
+version: 0.0.0
+license: MIT
+copyright: (c) 2020 Connor Adams
+author: Connor Adams
+maintainer: Connor Adams
+
+ghc-options: -Wall
+
+dependencies:
+ - base == 4.*
+
+library:
+  source-dirs: src
+
+tests:
+  spec:
+    defaults: hspec/hspec@master
+    dependencies: speller
