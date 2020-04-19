@@ -16,3 +16,5 @@ spec = do
       speller ["coconut"] `shouldBe` "c is for coconut"
     it "[\"whisky\", \"x-ray\"] should be \"w is for whisky, and x is for x-ray\"" $ do
       speller ["whisky", "x-ray"] `shouldBe` "w is for whisky, and x is for x-ray"
+    it "[\"apple\", \"banana\", \"coconut\"] should be \"a is for apple, b is for banana, and c is for coconut\"" $ do
+      speller ["apple", "banana", "coconut"] `shouldBe` "a is for apple, b is for banana, and c is for coconut"

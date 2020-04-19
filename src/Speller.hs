@@ -7,3 +7,4 @@ speller :: [String] -> String
 speller [] = ""
 speller (x:[]) = getPhrase x
 speller (x:y:[]) = getPhrase x ++ ", and " ++ getPhrase y
+speller (x:y:z:[]) = getPhrase x ++ ", " ++ getPhrase y ++ ", and " ++ getPhrase z
