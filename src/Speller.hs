@@ -1,5 +1,9 @@
 module Speller (speller) where
 
-speller :: [[Char]] -> [Char]
+getPhrase :: String -> String
+getPhrase word = ([head word]) ++ " is for " ++ word
+
+speller :: [String] -> String
 speller [] = ""
-speller (x:_) = ([head x]) ++ " is for " ++ x
+speller (x:[]) = getPhrase x
+speller (x:y:[]) = getPhrase x ++ ", and " ++ getPhrase y
