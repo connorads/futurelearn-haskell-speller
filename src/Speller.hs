@@ -1,7 +1,7 @@
 module Speller (speller) where
 
 getPhrase :: String -> String
-getPhrase word = ([head word]) ++ " is for " ++ word
+getPhrase word = [head word] ++ " is for " ++ word
 
 combinePhrase :: String -> [String] -> String
 combinePhrase phrase (word:[]) = phrase ++ ", and " ++ getPhrase word
